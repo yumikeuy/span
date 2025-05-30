@@ -1,6 +1,6 @@
 function x = gaussElim(x)
-%UNTITLED Summary of this function goes here
-%   Detailed explanation goes here
+% Autor: Mikhail Yushkevich.
+% Funkcja stosuje algorytm eliminacji Gaussa do macierzy x.
 
 for j = 1:size(x, 2)
     for i = 1:size(x, 1)
@@ -11,3 +11,5 @@ for j = 1:size(x, 2)
             x(i, :) = x(i, :) - l*x(j, :);
     end
 end
+
+end % function
